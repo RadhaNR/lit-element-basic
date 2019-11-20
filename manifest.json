@@ -1,0 +1,6 @@
+{
+  "name": "lit-app",
+  "short_name": "lit-app",
+  "start_url": "/",
+  "display": "standalone"
+}

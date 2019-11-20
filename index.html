@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>lit-app</title>
+  <meta name="description" content="lit-app description">
+
+  <!-- See https://goo.gl/OOhYW5 -->
+  <link rel="manifest" href="/manifest.json">
+
+  <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+  <script type="module" src="/src/lit-app-app/lit-app-app.js" crossorigin></script>
+  <script type="module" src="/src/lit-app-app/render-template.js" crossorigin></script>
+  <script type="module" src='/src/lit-app-app/slot-elements.js' crossorigin></script>
+</head>
+<style>
+    html {
+      --theme-primary: green;
+      --theme-secondary: aliceblue;
+      --theme-warning: red;
+      --theme-font-family: Roboto;
+    }
+    lit-app-app { 
+      color: var(--theme-primary); 
+      background-color: var(--theme-secondary); 
+      font-family: var(--theme-font-family);
+    } 
+    
+  </style>
+
+<body>
+  <lit-app-app></lit-app-app>
+  <!--<render-template></render-template>
+    <slot-element>
+      <div>This is child element content</div><div>Testing content</div> <p>Render me</p>
+      <p>Me three</p>
+      <p slot="meToo">Me too</p>
+      <p slot="one">Include me in slot "one".</p>
+    </slot-element> -->
+
+</body>
+
+</html>

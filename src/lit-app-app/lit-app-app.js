@@ -15,6 +15,7 @@ import './properties-ex';
 import './event-ex';
 import './custom-events';
 import './handle-custom-events';
+import './subprops-update';
 import './not-found';
 
 /**
@@ -70,6 +71,9 @@ class LitAppApp extends routerMixin(LitElement) {
     },{
       name: 'handle-custom-events',
       pattern: 'handle-custom-events'
+    },{
+      name: 'sub-props-change',
+      pattern: 'sub-props-change'
     },
     {
       name: 'not-found',
@@ -109,6 +113,7 @@ class LitAppApp extends routerMixin(LitElement) {
       <app-link href="/event-ex">Events |</app-link>
       <app-link href="/custom-events">Fire Custom Events | </app-link>
       <app-link href="/handle-custom-events">Lit Element Custom event</app-link>
+      <app-link href="/sub-props-change">SubPropsChange</app-link>
       
      <!-- <a href="test" @click=${this.navigateRoute} >Testing Route | </a>-->
       <app-link href="/user/14">Not Found</app-link>
@@ -133,6 +138,7 @@ class LitAppApp extends routerMixin(LitElement) {
       <div route="event-ex"><event-ex /></div>
       <div route="custom-events"><custom-events /></div>
       <div route="handle-custom-events"><handle-custom-events /></div>
+      <div route="sub-props-change"><sub-props-change /></div>
       </app-main>
 
     </div>
